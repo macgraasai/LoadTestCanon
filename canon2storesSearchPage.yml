@@ -1,0 +1,40 @@
+config:
+  target: "https://canon.stores2.shoptimize.in"
+  phases:
+    - duration: 30
+      arrivalRate: 4
+      name: "Warm-up"
+    - duration: 30
+      arrivalRate: 8
+      name: "Low load"
+    - duration: 30
+      arrivalRate: 12
+      name: "Moderate load"
+    - duration: 60
+      arrivalRate: 16
+      rampTo: 30
+      name: "Push memory"
+  payload:
+    path: "canon.csv"
+    fields:
+      - q
+  defaults:
+    headers:
+      accept: "application/json"
+
+scenarios:
+  - flow:
+      - get:
+          url: "/catalogsearch/result/?q={{ q }}"
+      - think: 3
+      - get:
+          url: "/catalogsearch/result/?q={{ q }}"
+      - think: 2
+      - get:
+          url: "/catalogsearch/result/?q={{ q }}"
+      - think: 4
+      - get:
+          url: "/checkout/cart/"   # add cart view (pulls session data)
+      - think: 3
+      - get:
+          url: "/catalogsearch/ajax/filterOptions?q={{ q }}"

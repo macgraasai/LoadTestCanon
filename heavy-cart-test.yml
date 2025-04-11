@@ -1,0 +1,52 @@
+config:
+  target: "https://canon.stores2.shoptimize.in"
+  phases:
+    - duration: 60
+      arrivalRate: 1000
+      name: "Steady warm-up"
+    - duration: 60
+      arrivalRate: 2000
+      name: "Increasing load"
+    - duration: 60
+      arrivalRate: 3000
+      name: "Push memory"
+  payload:
+    path: "products.csv"
+    fields:
+      - "product_id"
+  defaults:
+    headers:
+      accept: "application/json"
+
+scenarios:
+  - flow:
+      - post:
+          url: "/checkout/cart/add/product/{{ product_id }}/"
+          headers:
+            content-type: "application/x-www-form-urlencoded"
+          form:
+            product: "{{ product_id }}"
+            qty: 1
+      - think: 5
+      - post:
+          url: "/checkout/cart/add/product/{{ product_id }}/"
+          headers:
+            content-type: "application/x-www-form-urlencoded"
+          form:
+            product: "{{ product_id }}"
+            qty: 2
+      - think: 5
+      - get:
+          url: "/checkout/cart/"
+      - think: 5
+      - post:
+          url: "/checkout/cart/add/product/{{ product_id }}/"
+          headers:
+            content-type: "application/x-www-form-urlencoded"
+          form:
+            product: "{{ product_id }}"
+            qty: 3
+      - think: 5
+      - get:
+          url: "/checkout/cart/"
+      - think: 5
