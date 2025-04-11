@@ -1,0 +1,53 @@
+config:
+  target: "https://canon.stores2.shoptimize.in"
+  processor: "./memory-bloat.js"
+  phases:
+    - duration: 180
+      arrivalRate: 50
+      name: "Push RAM Phase"
+  payload:
+    path: "products.csv"
+    fields:
+      - "product_id"
+    order: random
+    skipHeader: true
+  defaults:
+    headers:
+      accept: "application/json"
+
+scenarios:
+  - name: "RAM-heavy product cart flow"
+    flow:
+      - function: "allocateMemory"
+      - loop:
+          - post:
+              url: "/checkout/cart/add/product/{{ product_id }}/"
+              headers:
+                content-type: "application/x-www-form-urlencoded"
+              form:
+                product: "{{ product_id }}"
+                qty: 1
+          - think: 2
+          - post:
+              url: "/checkout/cart/add/product/{{ product_id }}/"
+              headers:
+                content-type: "application/x-www-form-urlencoded"
+              form:
+                product: "{{ product_id }}"
+                qty: 2
+          - think: 2
+          - get:
+              url: "/checkout/cart/"
+          - think: 2
+          - post:
+              url: "/checkout/cart/add/product/{{ product_id }}/"
+              headers:
+                content-type: "application/x-www-form-urlencoded"
+              form:
+                product: "{{ product_id }}"
+                qty: 3
+          - get:
+              url: "/checkout/cart/"
+          - think: 2
+        count: 50
+      - think: 5
