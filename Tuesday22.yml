@@ -1,0 +1,142 @@
+config:
+  target: "https://canon.stores2.shoptimize.in"
+  phases:
+    - duration: 30
+      arrivalRate: 1
+      name: "Push RAM Phase"
+  payload:
+    path: "products.csv"
+    fields:
+      - "product_id"
+    order: random
+    skipHeader: true
+  defaults:
+    headers:
+      accept: "application/json"
+  http:
+    cookieJar: true
+    followRedirects: false  # Prevent auto-follow to control redirect handling
+  ensure:
+    maxErrorRate: 50
+
+scenarios:
+  - name: "Cart Flow with Serviceability Check"
+    flow:
+      - log: "🟢 Visiting homepage"
+      - get:
+          url: "/"
+          capture:
+            - regexp: '<input[^>]*name="form_key"[^>]*value="([^"]+)"'
+              as: "form_key"
+      - log: "✅ Captured form_key: {{ form_key }}"
+      - think: 2
+
+      - log: "📍 Setting pincode"
+      - post:
+          url: "/pincodes/pincodegroup/setFilter"
+          headers:
+            content-type: "application/x-www-form-urlencoded"
+          form:
+            form_key: "{{ form_key }}"
+            pincode: "411021"
+      - think: 1
+
+      - log: "🔍 Checking serviceability for product {{ product_id }}"
+      - post:
+          url: "/rest/V1/products/serviceability/"
+          headers:
+            content-type: "application/json"
+          json:
+            product_id: "{{ product_id }}"
+            pincode: "411021"
+      - think: 1
+
+      - log: "🔐 Loading customer sections to simulate session"
+      - get:
+          url: "/customer/section/load/"
+      - think: 1
+
+      - log: "🛒 Adding product {{ product_id }} to cart"
+      - post:
+          url: "/checkout/cart/add/uenc/%25uenc%25/product/{{ product_id }}/"
+          headers:
+            content-type: "application/x-www-form-urlencoded"
+          form:
+            product: "{{ product_id }}"
+            qty: 1
+            form_key: "{{ form_key }}"
+          capture:
+            - header: location
+              as: cart_redirect
+          expect:
+            - statusCode: 302
+      - log: "➡️ Got redirect to {{ cart_redirect }}"
+      - think: 1
+
+      # First redirect hop
+      - get:
+          url: "{{ cart_redirect }}"
+          capture:
+            - header: location
+              as: redirect_1
+          expect:
+            - statusCode: 302
+      - log: "➡️ Redirect 1: {{ redirect_1 }}"
+      - think: 1
+
+      # Second redirect hop
+      - get:
+          url: "{{ redirect_1 }}"
+          capture:
+            - header: location
+              as: redirect_2
+          expect:
+            - statusCode: 302
+      - log: "➡️ Redirect 2: {{ redirect_2 }}"
+      - think: 1
+
+      # Third redirect hop
+      - get:
+          url: "{{ redirect_2 }}"
+          capture:
+            - header: location
+              as: redirect_3
+          expect:
+            - statusCode: 302
+      - log: "➡️ Redirect 3: {{ redirect_3 }}"
+      - think: 1
+
+      # Fourth redirect hop
+      - get:
+          url: "{{ redirect_3 }}"
+          capture:
+            - header: location
+              as: redirect_4
+          expect:
+            - statusCode: 302
+      - log: "➡️ Redirect 4: {{ redirect_4 }}"
+      - think: 1
+
+      # Fifth redirect hop
+      - get:
+          url: "{{ redirect_4 }}"
+          capture:
+            - header: location
+              as: redirect_5
+          expect:
+            - statusCode: 302
+      - log: "➡️ Redirect 5: {{ redirect_5 }}"
+      - think: 1
+
+      # Final redirect follow-up, if needed
+      - get:
+          url: "{{ redirect_5 }}"
+          expect:
+            - statusCode: 200
+      - think: 1
+
+      # Final check of the cart
+      - log: "📦 Visiting final /checkout/cart page"
+      - get:
+          url: "/checkout/cart/"
+      - think: 3

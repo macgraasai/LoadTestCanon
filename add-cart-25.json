@@ -1,0 +1,892 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.Direct Cart Add": 1500,
+      "vusers.created": 1500,
+      "http.requests": 1500,
+      "plugins.metrics-by-endpoint./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/.errors.ETIMEDOUT": 855,
+      "errors.ETIMEDOUT": 855,
+      "vusers.failed": 855,
+      "http.codes.503": 645,
+      "http.responses": 645,
+      "http.downloaded_bytes": 184470,
+      "plugins.metrics-by-endpoint./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/.codes.503": 645,
+      "vusers.completed": 645
+    },
+    "rates": {
+      "http.request_rate": 25
+    },
+    "firstCounterAt": 1745323104542,
+    "firstHistogramAt": 1745323125696,
+    "lastCounterAt": 1745323174445,
+    "lastHistogramAt": 1745323170747,
+    "firstMetricAt": 1745323104542,
+    "lastMetricAt": 1745323174445,
+    "period": 1745323170000,
+    "summaries": {
+      "http.response_time": {
+        "min": 7,
+        "max": 9922,
+        "count": 645,
+        "mean": 65.4,
+        "p50": 10.9,
+        "median": 10.9,
+        "p75": 13.1,
+        "p90": 18,
+        "p95": 21.1,
+        "p99": 67.4,
+        "p999": 9801.2
+      },
+      "http.response_time.5xx": {
+        "min": 7,
+        "max": 9922,
+        "count": 645,
+        "mean": 65.4,
+        "p50": 10.9,
+        "median": 10.9,
+        "p75": 13.1,
+        "p90": 18,
+        "p95": 21.1,
+        "p99": 67.4,
+        "p999": 9801.2
+      },
+      "plugins.metrics-by-endpoint.response_time./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/": {
+        "min": 7,
+        "max": 9922,
+        "count": 645,
+        "mean": 65.4,
+        "p50": 10.9,
+        "median": 10.9,
+        "p75": 13.1,
+        "p90": 18,
+        "p95": 21.1,
+        "p99": 67.4,
+        "p999": 9801.2
+      },
+      "vusers.session_length": {
+        "min": 1044.9,
+        "max": 10990.3,
+        "count": 645,
+        "mean": 1128.4,
+        "p50": 1064.4,
+        "median": 1064.4,
+        "p75": 1085.9,
+        "p90": 1107.9,
+        "p95": 1130.2,
+        "p99": 1200.1,
+        "p999": 10832
+      }
+    },
+    "histograms": {
+      "http.response_time": {
+        "min": 7,
+        "max": 9922,
+        "count": 645,
+        "mean": 65.4,
+        "p50": 10.9,
+        "median": 10.9,
+        "p75": 13.1,
+        "p90": 18,
+        "p95": 21.1,
+        "p99": 67.4,
+        "p999": 9801.2
+      },
+      "http.response_time.5xx": {
+        "min": 7,
+        "max": 9922,
+        "count": 645,
+        "mean": 65.4,
+        "p50": 10.9,
+        "median": 10.9,
+        "p75": 13.1,
+        "p90": 18,
+        "p95": 21.1,
+        "p99": 67.4,
+        "p999": 9801.2
+      },
+      "plugins.metrics-by-endpoint.response_time./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/": {
+        "min": 7,
+        "max": 9922,
+        "count": 645,
+        "mean": 65.4,
+        "p50": 10.9,
+        "median": 10.9,
+        "p75": 13.1,
+        "p90": 18,
+        "p95": 21.1,
+        "p99": 67.4,
+        "p999": 9801.2
+      },
+      "vusers.session_length": {
+        "min": 1044.9,
+        "max": 10990.3,
+        "count": 645,
+        "mean": 1128.4,
+        "p50": 1064.4,
+        "median": 1064.4,
+        "p75": 1085.9,
+        "p90": 1107.9,
+        "p95": 1130.2,
+        "p99": 1200.1,
+        "p999": 10832
+      }
+    }
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.Direct Cart Add": 136,
+        "vusers.created": 136,
+        "http.requests": 136
+      },
+      "rates": {
+        "http.request_rate": 25
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1745323104542,
+      "lastCounterAt": 1745323109944,
+      "firstMetricAt": 1745323104542,
+      "lastMetricAt": 1745323109944,
+      "period": "1745323100000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Direct Cart Add": 250,
+        "vusers.created": 250,
+        "http.requests": 250,
+        "plugins.metrics-by-endpoint./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/.errors.ETIMEDOUT": 136,
+        "errors.ETIMEDOUT": 136,
+        "vusers.failed": 136
+      },
+      "rates": {
+        "http.request_rate": 25
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1745323110041,
+      "lastCounterAt": 1745323119944,
+      "firstMetricAt": 1745323110041,
+      "lastMetricAt": 1745323119944,
+      "period": "1745323110000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Direct Cart Add": 250,
+        "vusers.created": 250,
+        "http.requests": 250,
+        "plugins.metrics-by-endpoint./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/.errors.ETIMEDOUT": 250,
+        "errors.ETIMEDOUT": 250,
+        "vusers.failed": 250,
+        "http.codes.503": 88,
+        "http.responses": 88,
+        "http.downloaded_bytes": 25168,
+        "plugins.metrics-by-endpoint./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/.codes.503": 88,
+        "vusers.completed": 71
+      },
+      "rates": {
+        "http.request_rate": 25
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1745323120041,
+      "firstHistogramAt": 1745323125696,
+      "lastCounterAt": 1745323129991,
+      "lastHistogramAt": 1745323129991,
+      "firstMetricAt": 1745323120041,
+      "lastMetricAt": 1745323129991,
+      "period": "1745323120000",
+      "summaries": {
+        "http.response_time": {
+          "min": 8,
+          "max": 27,
+          "count": 88,
+          "mean": 12.7,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 15,
+          "p90": 19.1,
+          "p95": 19.9,
+          "p99": 24.8,
+          "p999": 24.8
+        },
+        "http.response_time.5xx": {
+          "min": 8,
+          "max": 27,
+          "count": 88,
+          "mean": 12.7,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 15,
+          "p90": 19.1,
+          "p95": 19.9,
+          "p99": 24.8,
+          "p999": 24.8
+        },
+        "plugins.metrics-by-endpoint.response_time./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/": {
+          "min": 8,
+          "max": 27,
+          "count": 88,
+          "mean": 12.7,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 15,
+          "p90": 19.1,
+          "p95": 19.9,
+          "p99": 24.8,
+          "p999": 24.8
+        },
+        "vusers.session_length": {
+          "min": 1049.1,
+          "max": 1153.2,
+          "count": 71,
+          "mean": 1076.2,
+          "p50": 1064.4,
+          "median": 1064.4,
+          "p75": 1085.9,
+          "p90": 1107.9,
+          "p95": 1107.9,
+          "p99": 1130.2,
+          "p999": 1130.2
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 8,
+          "max": 27,
+          "count": 88,
+          "mean": 12.7,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 15,
+          "p90": 19.1,
+          "p95": 19.9,
+          "p99": 24.8,
+          "p999": 24.8
+        },
+        "http.response_time.5xx": {
+          "min": 8,
+          "max": 27,
+          "count": 88,
+          "mean": 12.7,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 15,
+          "p90": 19.1,
+          "p95": 19.9,
+          "p99": 24.8,
+          "p999": 24.8
+        },
+        "plugins.metrics-by-endpoint.response_time./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/": {
+          "min": 8,
+          "max": 27,
+          "count": 88,
+          "mean": 12.7,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 15,
+          "p90": 19.1,
+          "p95": 19.9,
+          "p99": 24.8,
+          "p999": 24.8
+        },
+        "vusers.session_length": {
+          "min": 1049.1,
+          "max": 1153.2,
+          "count": 71,
+          "mean": 1076.2,
+          "p50": 1064.4,
+          "median": 1064.4,
+          "p75": 1085.9,
+          "p90": 1107.9,
+          "p95": 1107.9,
+          "p99": 1130.2,
+          "p999": 1130.2
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Direct Cart Add": 250,
+        "vusers.created": 250,
+        "http.requests": 250,
+        "plugins.metrics-by-endpoint./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/.errors.ETIMEDOUT": 160,
+        "errors.ETIMEDOUT": 160,
+        "vusers.failed": 160,
+        "vusers.completed": 205,
+        "http.codes.503": 209,
+        "http.responses": 209,
+        "http.downloaded_bytes": 59774,
+        "plugins.metrics-by-endpoint./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/.codes.503": 209
+      },
+      "rates": {
+        "http.request_rate": 25
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1745323130003,
+      "firstHistogramAt": 1745323130003,
+      "lastCounterAt": 1745323139989,
+      "lastHistogramAt": 1745323139989,
+      "firstMetricAt": 1745323130003,
+      "lastMetricAt": 1745323139989,
+      "period": "1745323130000",
+      "summaries": {
+        "vusers.session_length": {
+          "min": 1049,
+          "max": 1161.4,
+          "count": 205,
+          "mean": 1072.3,
+          "p50": 1064.4,
+          "median": 1064.4,
+          "p75": 1085.9,
+          "p90": 1085.9,
+          "p95": 1107.9,
+          "p99": 1130.2,
+          "p999": 1153.1
+        },
+        "http.response_time": {
+          "min": 8,
+          "max": 68,
+          "count": 209,
+          "mean": 12.4,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.9,
+          "p90": 16.9,
+          "p95": 19.9,
+          "p99": 22,
+          "p999": 47.9
+        },
+        "http.response_time.5xx": {
+          "min": 8,
+          "max": 68,
+          "count": 209,
+          "mean": 12.4,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.9,
+          "p90": 16.9,
+          "p95": 19.9,
+          "p99": 22,
+          "p999": 47.9
+        },
+        "plugins.metrics-by-endpoint.response_time./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/": {
+          "min": 8,
+          "max": 68,
+          "count": 209,
+          "mean": 12.4,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.9,
+          "p90": 16.9,
+          "p95": 19.9,
+          "p99": 22,
+          "p999": 47.9
+        }
+      },
+      "histograms": {
+        "vusers.session_length": {
+          "min": 1049,
+          "max": 1161.4,
+          "count": 205,
+          "mean": 1072.3,
+          "p50": 1064.4,
+          "median": 1064.4,
+          "p75": 1085.9,
+          "p90": 1085.9,
+          "p95": 1107.9,
+          "p99": 1130.2,
+          "p999": 1153.1
+        },
+        "http.response_time": {
+          "min": 8,
+          "max": 68,
+          "count": 209,
+          "mean": 12.4,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.9,
+          "p90": 16.9,
+          "p95": 19.9,
+          "p99": 22,
+          "p999": 47.9
+        },
+        "http.response_time.5xx": {
+          "min": 8,
+          "max": 68,
+          "count": 209,
+          "mean": 12.4,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.9,
+          "p90": 16.9,
+          "p95": 19.9,
+          "p99": 22,
+          "p999": 47.9
+        },
+        "plugins.metrics-by-endpoint.response_time./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/": {
+          "min": 8,
+          "max": 68,
+          "count": 209,
+          "mean": 12.4,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.9,
+          "p90": 16.9,
+          "p95": 19.9,
+          "p99": 22,
+          "p999": 47.9
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Direct Cart Add": 250,
+        "vusers.created": 250,
+        "http.requests": 250,
+        "http.codes.503": 166,
+        "http.responses": 166,
+        "http.downloaded_bytes": 47476,
+        "plugins.metrics-by-endpoint./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/.codes.503": 166,
+        "vusers.failed": 43,
+        "vusers.completed": 171,
+        "plugins.metrics-by-endpoint./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/.errors.ETIMEDOUT": 43,
+        "errors.ETIMEDOUT": 43
+      },
+      "rates": {
+        "http.request_rate": 25
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1745323140004,
+      "firstHistogramAt": 1745323140004,
+      "lastCounterAt": 1745323149998,
+      "lastHistogramAt": 1745323149998,
+      "firstMetricAt": 1745323140004,
+      "lastMetricAt": 1745323149998,
+      "period": "1745323140000",
+      "summaries": {
+        "http.response_time": {
+          "min": 8,
+          "max": 2054,
+          "count": 166,
+          "mean": 41.3,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.9,
+          "p90": 18,
+          "p95": 27.9,
+          "p99": 1022.7,
+          "p999": 1652.8
+        },
+        "http.response_time.5xx": {
+          "min": 8,
+          "max": 2054,
+          "count": 166,
+          "mean": 41.3,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.9,
+          "p90": 18,
+          "p95": 27.9,
+          "p99": 1022.7,
+          "p999": 1652.8
+        },
+        "plugins.metrics-by-endpoint.response_time./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/": {
+          "min": 8,
+          "max": 2054,
+          "count": 166,
+          "mean": 41.3,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.9,
+          "p90": 18,
+          "p95": 27.9,
+          "p99": 1022.7,
+          "p999": 1652.8
+        },
+        "vusers.session_length": {
+          "min": 1047.9,
+          "max": 3105.8,
+          "count": 171,
+          "mean": 1107.8,
+          "p50": 1064.4,
+          "median": 1064.4,
+          "p75": 1085.9,
+          "p90": 1130.2,
+          "p95": 1153.1,
+          "p99": 2059.5,
+          "p999": 2725
+        }
+      },
+      "histograms": {
+        "http.response_time": {
+          "min": 8,
+          "max": 2054,
+          "count": 166,
+          "mean": 41.3,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.9,
+          "p90": 18,
+          "p95": 27.9,
+          "p99": 1022.7,
+          "p999": 1652.8
+        },
+        "http.response_time.5xx": {
+          "min": 8,
+          "max": 2054,
+          "count": 166,
+          "mean": 41.3,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.9,
+          "p90": 18,
+          "p95": 27.9,
+          "p99": 1022.7,
+          "p999": 1652.8
+        },
+        "plugins.metrics-by-endpoint.response_time./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/": {
+          "min": 8,
+          "max": 2054,
+          "count": 166,
+          "mean": 41.3,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.9,
+          "p90": 18,
+          "p95": 27.9,
+          "p99": 1022.7,
+          "p999": 1652.8
+        },
+        "vusers.session_length": {
+          "min": 1047.9,
+          "max": 3105.8,
+          "count": 171,
+          "mean": 1107.8,
+          "p50": 1064.4,
+          "median": 1064.4,
+          "p75": 1085.9,
+          "p90": 1130.2,
+          "p95": 1153.1,
+          "p99": 2059.5,
+          "p999": 2725
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Direct Cart Add": 250,
+        "vusers.created": 250,
+        "http.requests": 250,
+        "vusers.failed": 84,
+        "vusers.completed": 122,
+        "http.codes.503": 117,
+        "http.responses": 117,
+        "http.downloaded_bytes": 33462,
+        "plugins.metrics-by-endpoint./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/.codes.503": 117,
+        "plugins.metrics-by-endpoint./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/.errors.ETIMEDOUT": 84,
+        "errors.ETIMEDOUT": 84
+      },
+      "rates": {
+        "http.request_rate": 25
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1745323150041,
+      "firstHistogramAt": 1745323150114,
+      "lastCounterAt": 1745323159943,
+      "lastHistogramAt": 1745323159887,
+      "firstMetricAt": 1745323150041,
+      "lastMetricAt": 1745323159943,
+      "period": "1745323150000",
+      "summaries": {
+        "vusers.session_length": {
+          "min": 1045.1,
+          "max": 1197.7,
+          "count": 122,
+          "mean": 1075,
+          "p50": 1064.4,
+          "median": 1064.4,
+          "p75": 1085.9,
+          "p90": 1107.9,
+          "p95": 1130.2,
+          "p99": 1153.1,
+          "p999": 1153.1
+        },
+        "http.response_time": {
+          "min": 7,
+          "max": 34,
+          "count": 117,
+          "mean": 11.6,
+          "p50": 10.1,
+          "median": 10.1,
+          "p75": 13.1,
+          "p90": 15,
+          "p95": 16.9,
+          "p99": 22.9,
+          "p999": 34.1
+        },
+        "http.response_time.5xx": {
+          "min": 7,
+          "max": 34,
+          "count": 117,
+          "mean": 11.6,
+          "p50": 10.1,
+          "median": 10.1,
+          "p75": 13.1,
+          "p90": 15,
+          "p95": 16.9,
+          "p99": 22.9,
+          "p999": 34.1
+        },
+        "plugins.metrics-by-endpoint.response_time./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/": {
+          "min": 7,
+          "max": 34,
+          "count": 117,
+          "mean": 11.6,
+          "p50": 10.1,
+          "median": 10.1,
+          "p75": 13.1,
+          "p90": 15,
+          "p95": 16.9,
+          "p99": 22.9,
+          "p999": 34.1
+        }
+      },
+      "histograms": {
+        "vusers.session_length": {
+          "min": 1045.1,
+          "max": 1197.7,
+          "count": 122,
+          "mean": 1075,
+          "p50": 1064.4,
+          "median": 1064.4,
+          "p75": 1085.9,
+          "p90": 1107.9,
+          "p95": 1130.2,
+          "p99": 1153.1,
+          "p999": 1153.1
+        },
+        "http.response_time": {
+          "min": 7,
+          "max": 34,
+          "count": 117,
+          "mean": 11.6,
+          "p50": 10.1,
+          "median": 10.1,
+          "p75": 13.1,
+          "p90": 15,
+          "p95": 16.9,
+          "p99": 22.9,
+          "p999": 34.1
+        },
+        "http.response_time.5xx": {
+          "min": 7,
+          "max": 34,
+          "count": 117,
+          "mean": 11.6,
+          "p50": 10.1,
+          "median": 10.1,
+          "p75": 13.1,
+          "p90": 15,
+          "p95": 16.9,
+          "p99": 22.9,
+          "p999": 34.1
+        },
+        "plugins.metrics-by-endpoint.response_time./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/": {
+          "min": 7,
+          "max": 34,
+          "count": 117,
+          "mean": 11.6,
+          "p50": 10.1,
+          "median": 10.1,
+          "p75": 13.1,
+          "p90": 15,
+          "p95": 16.9,
+          "p99": 22.9,
+          "p999": 34.1
+        }
+      }
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Direct Cart Add": 114,
+        "vusers.created": 114,
+        "http.requests": 114,
+        "plugins.metrics-by-endpoint./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/.errors.ETIMEDOUT": 130,
+        "errors.ETIMEDOUT": 130,
+        "vusers.failed": 130,
+        "vusers.completed": 75,
+        "http.codes.503": 65,
+        "http.responses": 65,
+        "http.downloaded_bytes": 18590,
+        "plugins.metrics-by-endpoint./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/.codes.503": 65
+      },
+      "rates": {
+        "http.request_rate": 25
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1745323160004,
+      "firstHistogramAt": 1745323160004,
+      "lastCounterAt": 1745323169945,
+      "lastHistogramAt": 1745323169746,
+      "firstMetricAt": 1745323160004,
+      "lastMetricAt": 1745323169945,
+      "period": "1745323160000",
+      "summaries": {
+        "vusers.session_length": {
+          "min": 1044.9,
+          "max": 10990.3,
+          "count": 75,
+          "mean": 1334,
+          "p50": 1064.4,
+          "median": 1064.4,
+          "p75": 1085.9,
+          "p90": 1107.9,
+          "p95": 1107.9,
+          "p99": 10832,
+          "p999": 10832
+        },
+        "http.response_time": {
+          "min": 8,
+          "max": 9922,
+          "count": 65,
+          "mean": 465.6,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.1,
+          "p90": 16,
+          "p95": 21.1,
+          "p99": 9801.2,
+          "p999": 9801.2
+        },
+        "http.response_time.5xx": {
+          "min": 8,
+          "max": 9922,
+          "count": 65,
+          "mean": 465.6,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.1,
+          "p90": 16,
+          "p95": 21.1,
+          "p99": 9801.2,
+          "p999": 9801.2
+        },
+        "plugins.metrics-by-endpoint.response_time./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/": {
+          "min": 8,
+          "max": 9922,
+          "count": 65,
+          "mean": 465.6,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.1,
+          "p90": 16,
+          "p95": 21.1,
+          "p99": 9801.2,
+          "p999": 9801.2
+        }
+      },
+      "histograms": {
+        "vusers.session_length": {
+          "min": 1044.9,
+          "max": 10990.3,
+          "count": 75,
+          "mean": 1334,
+          "p50": 1064.4,
+          "median": 1064.4,
+          "p75": 1085.9,
+          "p90": 1107.9,
+          "p95": 1107.9,
+          "p99": 10832,
+          "p999": 10832
+        },
+        "http.response_time": {
+          "min": 8,
+          "max": 9922,
+          "count": 65,
+          "mean": 465.6,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.1,
+          "p90": 16,
+          "p95": 21.1,
+          "p99": 9801.2,
+          "p999": 9801.2
+        },
+        "http.response_time.5xx": {
+          "min": 8,
+          "max": 9922,
+          "count": 65,
+          "mean": 465.6,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.1,
+          "p90": 16,
+          "p95": 21.1,
+          "p99": 9801.2,
+          "p999": 9801.2
+        },
+        "plugins.metrics-by-endpoint.response_time./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/": {
+          "min": 8,
+          "max": 9922,
+          "count": 65,
+          "mean": 465.6,
+          "p50": 10.9,
+          "median": 10.9,
+          "p75": 13.1,
+          "p90": 16,
+          "p95": 21.1,
+          "p99": 9801.2,
+          "p999": 9801.2
+        }
+      }
+    },
+    {
+      "counters": {
+        "plugins.metrics-by-endpoint./checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/.errors.ETIMEDOUT": 52,
+        "errors.ETIMEDOUT": 52,
+        "vusers.failed": 52,
+        "vusers.completed": 1
+      },
+      "rates": {},
+      "firstCounterAt": 1745323170093,
+      "firstHistogramAt": 1745323170747,
+      "lastCounterAt": 1745323174445,
+      "lastHistogramAt": 1745323170747,
+      "firstMetricAt": 1745323170093,
+      "lastMetricAt": 1745323174445,
+      "period": "1745323170000",
+      "summaries": {
+        "vusers.session_length": {
+          "min": 10922.1,
+          "max": 10922.1,
+          "count": 1,
+          "mean": 10922.1,
+          "p50": 10832,
+          "median": 10832,
+          "p75": 10832,
+          "p90": 10832,
+          "p95": 10832,
+          "p99": 10832,
+          "p999": 10832
+        }
+      },
+      "histograms": {
+        "vusers.session_length": {
+          "min": 10922.1,
+          "max": 10922.1,
+          "count": 1,
+          "mean": 10922.1,
+          "p50": 10832,
+          "median": 10832,
+          "p75": 10832,
+          "p90": 10832,
+          "p95": 10832,
+          "p99": 10832,
+          "p999": 10832
+        }
+      }
+    }
+  ]
+}

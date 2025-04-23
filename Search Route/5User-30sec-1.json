@@ -1,0 +1,120 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.0": 150,
+      "vusers.created": 150,
+      "http.requests": 150,
+      "plugins.metrics-by-endpoint./catalogsearch/result/.errors.ETIMEDOUT": 150,
+      "errors.ETIMEDOUT": 150,
+      "vusers.failed": 150
+    },
+    "rates": {
+      "http.request_rate": 5
+    },
+    "firstCounterAt": 1744796547198,
+    "lastCounterAt": 1744796586403,
+    "firstMetricAt": 1744796547198,
+    "lastMetricAt": 1744796586403,
+    "period": 1744796580000,
+    "summaries": {},
+    "histograms": {}
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.0": 15,
+        "vusers.created": 15,
+        "http.requests": 15
+      },
+      "rates": {
+        "http.request_rate": 10
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1744796547198,
+      "lastCounterAt": 1744796549402,
+      "firstMetricAt": 1744796547198,
+      "lastMetricAt": 1744796549402,
+      "period": "1744796540000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 50,
+        "vusers.created": 50,
+        "http.requests": 50,
+        "plugins.metrics-by-endpoint./catalogsearch/result/.errors.ETIMEDOUT": 15,
+        "errors.ETIMEDOUT": 15,
+        "vusers.failed": 15
+      },
+      "rates": {
+        "http.request_rate": 5
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1744796550198,
+      "lastCounterAt": 1744796559402,
+      "firstMetricAt": 1744796550198,
+      "lastMetricAt": 1744796559402,
+      "period": "1744796550000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 50,
+        "vusers.created": 50,
+        "http.requests": 50,
+        "plugins.metrics-by-endpoint./catalogsearch/result/.errors.ETIMEDOUT": 50,
+        "errors.ETIMEDOUT": 50,
+        "vusers.failed": 50
+      },
+      "rates": {
+        "http.request_rate": 5
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1744796560198,
+      "lastCounterAt": 1744796569402,
+      "firstMetricAt": 1744796560198,
+      "lastMetricAt": 1744796569402,
+      "period": "1744796560000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.0": 35,
+        "vusers.created": 35,
+        "http.requests": 35,
+        "plugins.metrics-by-endpoint./catalogsearch/result/.errors.ETIMEDOUT": 50,
+        "errors.ETIMEDOUT": 50,
+        "vusers.failed": 50
+      },
+      "rates": {
+        "http.request_rate": 5
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1744796570198,
+      "lastCounterAt": 1744796579403,
+      "firstMetricAt": 1744796570198,
+      "lastMetricAt": 1744796579403,
+      "period": "1744796570000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "plugins.metrics-by-endpoint./catalogsearch/result/.errors.ETIMEDOUT": 35,
+        "errors.ETIMEDOUT": 35,
+        "vusers.failed": 35
+      },
+      "rates": {},
+      "firstCounterAt": 1744796580200,
+      "lastCounterAt": 1744796586403,
+      "firstMetricAt": 1744796580200,
+      "lastMetricAt": 1744796586403,
+      "period": "1744796580000",
+      "summaries": {},
+      "histograms": {}
+    }
+  ]
+}

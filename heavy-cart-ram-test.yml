@@ -3,7 +3,7 @@ config:
   processor: "./memory-bloat.js"
   phases:
     - duration: 180
-      arrivalRate: 50
+      arrivalRate: 1
       name: "Push RAM Phase"
   payload:
     path: "products.csv"

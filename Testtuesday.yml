@@ -1,0 +1,28 @@
+config:
+  target: "https://canon.stores2.shoptimize.in"
+  phases:
+    - duration: 60
+      arrivalRate: 18
+      name: "Direct Add to Cart Load Test"
+  defaults:
+    headers:
+      content-type: "application/x-www-form-urlencoded"
+      accept: "application/json"
+  http:
+    cookieJar: true
+    followRedirects: false  # Do NOT follow the redirect — just check for 302
+
+scenarios:
+  - name: "Direct Cart Add"
+    flow:
+      - log: "🛒 Hitting direct cart add URL"
+      - post:
+          url: "/checkout/cart/add/uenc/aHR0cHM6Ly9jYW5vbi5zdG9yZXMyLnNob3B0aW1pemUuaW4vcHJpbnRpbmcuaHRtbA~~/product/5225/"
+          form:
+            product: 5225
+            qty: 1
+            form_key: "dummyformkey"  # Replace with real key if CSRF check enforced
+          expect:
+            - statusCode: 302
+      - log: "✅ Got 302 redirect – product likely added"
+      - think: 1

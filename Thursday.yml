@@ -1,0 +1,51 @@
+config:
+  target: "https://canon.stores2.shoptimize.in"
+  phases:
+    - duration: 60
+      arrivalRate: 1
+      name: "Single Load Phase"
+  payload:
+    path: "products.csv"
+    fields:
+      - "product_id"
+  defaults:
+    headers:
+      accept: "application/json"
+    timeout: 10
+  http:
+    cookieJar: true  
+
+scenarios:
+  - flow:
+      - get:
+          url: "https://canon.stores2.shoptimize.in/"
+      
+      - capture:
+          - regexp: '<input name="form_key" type="hidden" value="(.+?)"'
+            as: "form_key"
+
+
+      - post:
+          url: "https://canon.stores2.shoptimize.in/pincodes/pincodegroup/setFilter"
+          headers:
+            content-type: "application/x-www-form-urlencoded"
+          form:
+            pincode: "411021"  # Replace with the desired pincode
+            form_key: "{{ form_key }}"
+
+
+      - post:
+          url: "https://canon.stores2.shoptimize.in/checkout/cart/add/product/{{ product_id }}/"
+          headers:
+            content-type: "application/x-www-form-urlencoded"
+          form:
+            product: "{{ product_id }}"
+            qty: 1
+            form_key: "{{ form_key }}"
+
+
+      - think: 2
+
+
+      - get:
+          url: "https://canon.stores2.shoptimize.in/checkout/cart/"
